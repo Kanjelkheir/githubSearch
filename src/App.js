@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import {useNavigate} from 'react-router-dom';
+import './index.css';
+import {useGetUserQuery} from './App/Apis/GithubApi.js';
 
-function App() {
+const App = () => {
+  const navigate = useNavigate();
+  const {data, isError, isLoading} = useGetUserQuery("eliekh05");
+  if (isError) {
+    return <div className="text-red-500 font-bold underline">There is an Error! Wrong username!</div>
+  }
+  if (isLoading) {
+    return <div className="text-blue-500 font-bold underline">Loading...</div>
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <p className="text-blue-400 underline">Tailwindcss</p>
+      {data?.name}
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
