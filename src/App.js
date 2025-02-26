@@ -9,10 +9,20 @@ import Profile from './components/profile.jsx';
 const App = () => {
   const [input, setInput] = useState("");
   const [username, setUsername] = useState('');
+  const [deleted, setDeleted] = useState(false);
   const navigate = useNavigate();
+  const handleDelete = () => {
+    localStorage.removeItem("username");
+    setDeleted(true);
+  }
   const { data, isError, isLoading} = useGetUserQuery('bilal-algorithms');
   if (localStorage.getItem("username") === null) {
-    localStorage.setItem("username", "bilal-algorithms");
+    if (deleted) {
+      localStorage.setItem("username", null);
+      setDeleted(false);
+    } else {
+      localStorage.setItem("username", "bilal-algorithms");
+    }
   }
   return (
     <div className="flex flex-col min-h-screen bg-white dark:bg-dark-bg">
@@ -32,6 +42,12 @@ const App = () => {
         placeholder="Search for a Developer..."
         value={input}
         onChange={(e) => setInput(e.target.value)}
+        // add event listener for enter key
+        onKeyDown={(e) => {
+          if (e.key === "Enter") {
+            setUsername(input);
+          }
+        }}
         className="w-full h-full outline-none border-none pl-2 rounded-xl dark:bg-transparent"
         />
         <button onClick={() => setUsername(input)} className="px-4 hover:bg-slate-300 rounded-md duration-200 dark:hover:bg-slate-700">
@@ -40,7 +56,7 @@ const App = () => {
       </div>
         <div className="relative top-10 mx-4 flex flex-col-reverse">
         <button onClick={() => {localStorage.setItem("username", input); console.log(username)}} className="text-blue-400 mt-2 hover:underline cursor-pointer w-fit">Save search</button>
-          <Profile username={username ? username : localStorage.getItem("username")} />
+          <Profile username={username ? username : localStorage.getItem("username")} onDelete={handleDelete} />
         </div>
         
     </div>
