@@ -20,8 +20,6 @@ const App = () => {
     setDeleted(true);
     setUsername(null);
   }
-
-  const { data, isError, isLoading} = useGetUserQuery('bilal-algorithms');
   if (localStorage.getItem("username") === null) {
     if (deleted) {
       setDeleted(false);
@@ -60,8 +58,7 @@ const App = () => {
         </button>
       </div>
         <div className="relative top-10 mx-4 flex flex-col-reverse">
-        <button onClick={() => {localStorage.setItem("username", input); console.log(username)}} className="text-blue-400 mt-2 hover:underline cursor-pointer w-fit">Save search</button>
-          <Profile username={username ? username : localStorage.getItem("username")} onDelete={handleDelete} deleted={deleted} />
+          <Profile username={username ? username : localStorage.getItem("username")} onDelete={handleDelete} deleted={deleted} input={username} />
         </div>
         
     </div>
