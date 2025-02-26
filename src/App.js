@@ -1,5 +1,5 @@
 // filepath: /home/bilal/Desktop/search/src/App.js
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import { useNavigate } from 'react-router-dom';
 import './index.css';
 import { useGetUserQuery } from './App/Apis/GithubApi.js';
@@ -11,14 +11,19 @@ const App = () => {
   const [username, setUsername] = useState('');
   const [deleted, setDeleted] = useState(false);
   const navigate = useNavigate();
+  useEffect(() => {
+    setDeleted(false);
+    (localStorage.getItem("username")) ? setUsername(localStorage.getItem("username")) : setUsername("bilal-algorithms");
+  }, []);
   const handleDelete = () => {
-    localStorage.removeItem("username");
+    localStorage.setItem("username", '');
     setDeleted(true);
+    setUsername(null);
   }
+
   const { data, isError, isLoading} = useGetUserQuery('bilal-algorithms');
   if (localStorage.getItem("username") === null) {
     if (deleted) {
-      localStorage.setItem("username", null);
       setDeleted(false);
     } else {
       localStorage.setItem("username", "bilal-algorithms");
@@ -48,7 +53,7 @@ const App = () => {
             setUsername(input);
           }
         }}
-        className="w-full h-full outline-none border-none pl-2 rounded-xl dark:bg-transparent"
+        className="w-full h-full outline-none border-none pl-2 rounded-xl dark:bg-transparent dark:text-blue-400 text-blue-400"
         />
         <button onClick={() => setUsername(input)} className="px-4 hover:bg-slate-300 rounded-md duration-200 dark:hover:bg-slate-700">
           <SearchIcon className="w-5 h-5" />
@@ -56,7 +61,7 @@ const App = () => {
       </div>
         <div className="relative top-10 mx-4 flex flex-col-reverse">
         <button onClick={() => {localStorage.setItem("username", input); console.log(username)}} className="text-blue-400 mt-2 hover:underline cursor-pointer w-fit">Save search</button>
-          <Profile username={username ? username : localStorage.getItem("username")} onDelete={handleDelete} />
+          <Profile username={username ? username : localStorage.getItem("username")} onDelete={handleDelete} deleted={deleted} />
         </div>
         
     </div>
