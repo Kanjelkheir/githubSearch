@@ -17,6 +17,10 @@ const Profile = ({username, onDelete, deleted, input}) => {
     if (isLoading) {
         return <p className="text-yellow-400 font-semibold">Loading...</p>
     }
+    const stringDate = data?.created_at;
+    const date = new Date(stringDate);
+    const formattedDate = date.toLocaleString('en-US', {month: 'long', day: 'numeric', year: 'numeric'});
+    
     return (
         <div>
             <div className="p-[1rem] rounded-lg shadow-md shadow-slate-300  h-fit flex flex-row w-fit gap-x-3 group">
@@ -27,7 +31,7 @@ const Profile = ({username, onDelete, deleted, input}) => {
                     <p className="font-light text-blue-400 text-sm">@{data?.login}</p>
                     <p className="font-medium text-sm text-gray-400">Bio: {data?.bio}</p>
                 </div>
-                <p className="text-black dark:text-gray-600">Joined GitHub at {data?.created_at}</p>
+                <p className="text-black dark:text-gray-600">Joined GitHub at {formattedDate}</p>
                 <div className="flex flex-col justify-between">
                     <div className="flex flex-row justify-between">
                         <p className="font-light text-black dark:text-white">Followers</p>
@@ -43,7 +47,14 @@ const Profile = ({username, onDelete, deleted, input}) => {
             </div>
             <button onClick={onDelete} className="relative  bg-red-500 text-white p-1 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-200">Delete</button>
         </div>
-        <button onClick={() => {localStorage.setItem("username", input); console.log(username)}} className="absolute top-52 text-blue-400 mt-2 hover:underline cursor-pointer w-fit">Save search</button>
+        {localStorage.getItem("username") === "bilal-algorithms" ? null : (
+            <button 
+                onClick={() => {localStorage.setItem("username", input); console.log(username)}} 
+                className="absolute top-52 text-blue-400 mt-2 hover:underline cursor-pointer w-fit"
+            >
+                Save search
+            </button>
+        )}
         </div>
         
         
