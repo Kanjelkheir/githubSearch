@@ -6,8 +6,7 @@
 </p>
 
 ## video of usage:
-<video src="./githubsearch.mov" width="50%" height="200px"></video>
-
+[!usage video](./githubSearch.gif)
 ---
 
 In this web app, you will be able to view any GitHub user, displaying their information in a way that introduces them and provides insights about them.  
@@ -89,4 +88,8 @@ the following command will run the project on your local machine with the defaul
 ```bash
 npm start
 ```
+**note: if there is any downfall in the api we have a backup dataset for all the users!**
+Developer: Bilal Kanjelkheir
+And special thanks for Elie Khalil for creating the backup dataset.
+
 **Enjoy now you have the Github Search project setup!**
