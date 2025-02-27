@@ -852,3 +852,7 @@
   syntax: "*";
   inherits: false;
 }
+
+html, body {
+  overflow: hidden;
+}
