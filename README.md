@@ -89,7 +89,7 @@ The following command will run the project on your local machine with the defaul
 npm start
 ```
 **note: If there is any downfall in the API, we have a backup dataset for all the users!** <br />
-Developer: Bilal Kanjelkheir </br>
-And special thanks for Elie Khalil for creating the backup dataset.
+## Developer: Bilal Kanjelkheir </br>
+### And special thanks for Elie Khalil for creating the backup dataset.
 
 **Enjoy now you have the Github Search project setup!**
