@@ -5,16 +5,17 @@ import {BrowserRouter, Routes, Route, useNavigate, Link} from 'react-router-dom'
 import Test from './Test';
 import {store} from './App/store.js';
 import {Provider} from 'react-redux';
+import './index.css'
 
 const root = createRoot(document.getElementById('root'));
 root.render(
   <Provider store={store}>
     <React.StrictMode>
     <BrowserRouter>
-      <Routes>
+    <Routes>
         <Route path="/" element={<App />} />
         <Route path="/test" element={<Test />} />
-      </Routes>
+    </Routes>
     </BrowserRouter>
   </React.StrictMode>
   </Provider>
