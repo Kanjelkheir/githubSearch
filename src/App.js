@@ -1,8 +1,6 @@
 // filepath: /home/bilal/Desktop/search/src/App.js
 import React, {useState, useEffect} from 'react';
-import { useNavigate } from 'react-router-dom';
 import './index.css';
-import { useGetUserQuery } from './App/Apis/GithubApi.js';
 import {ReactComponent as SearchIcon} from './assets/magnifying-glass.svg';
 import Profile from './components/profile.jsx';
 
@@ -10,7 +8,6 @@ const App = () => {
   const [input, setInput] = useState("");
   const [username, setUsername] = useState('');
   const [deleted, setDeleted] = useState(false);
-  const navigate = useNavigate();
   useEffect(() => {
     setDeleted(false);
     if (localStorage.getItem('username') === "") {
