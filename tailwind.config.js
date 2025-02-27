@@ -13,7 +13,7 @@ module.exports = {
       colors: {
         'gradient-start': '#ff7e5f',
         'gradient-end': '#feb47b',
-        'dark-bg': '#1a202c', // Define your dark background color here
+        'dark-bg': '#1a202c',
       },
     },
   },
