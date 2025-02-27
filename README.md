@@ -32,7 +32,7 @@ Installing Node.js & npm <b>OpenSUSE:</b>
 brew install node
 open the terminal and run the following code:
  ```
- brew install node
+ bash brew install node
  ```
 brew install npm
 now run this code for installing npm(node package manager): ```
