@@ -13,7 +13,12 @@ const App = () => {
   const navigate = useNavigate();
   useEffect(() => {
     setDeleted(false);
-    (localStorage.getItem("username")) ? setUsername(localStorage.getItem("username")) : setUsername("bilal-algorithms");
+    if (localStorage.getItem('username') === "") {
+      setUsername("bilal-algorithms");
+      localStorage.setItem("username", "bilal-algorithms");
+    } else {
+      setUsername(localStorage.getItem("username"));
+    }
   }, []);
   const handleDelete = () => {
     localStorage.setItem("username", '');
@@ -48,6 +53,7 @@ const App = () => {
         // add event listener for enter key
         onKeyDown={(e) => {
           if (e.key === "Enter") {
+            localStorage.setItem("username", input);
             setUsername(input);
           }
         }}
