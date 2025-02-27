@@ -5,6 +5,9 @@
     <img src="/light-mode.png" width="45%" /> 
 </p>
 
+## video of usage:
+<video src="./githubsearch.mov" width="50%" height="200px"></video>
+
 ---
 
 In this web app, you will be able to view any GitHub user, displaying their information in a way that introduces them and provides insights about them.  
