@@ -1,49 +1,61 @@
-<h1>Github Search Web app</h1>
-<p float="left">
-    <img src="/dark-mode.png" width=45% />
-    <img src="/light-mode.png" width=45% /> 
-</p>
-<hr>
-in this web app you will be able to view any Github user. displaying their their information that would introduce the user and let you know more about him.
-in this README file you will know how to setup the project on your local machine.
+# Github Search Web App
 
-<b><h2>Prerequisites</h2></b>
-<ul>
-        <li>Node.js (I will show you on how to install in this README)</li>
-        <li>NPM(node package manager) which will also be shown on how to be installed in this README</li>
-</ul>
-<p>Please follow the following instructions.</p>
-<b><h2>How to install prerequisites on Linux</h2></b>
-<b>Installing on Ubuntu, Debian, and Linux Mint:</b>
+<p float="left">
+    <img src="/dark-mode.png" width="45%" />
+    <img src="/light-mode.png" width="45%" /> 
+</p>
+
+---
+
+In this web app, you will be able to view any GitHub user, displaying their information in a way that introduces them and provides insights about them.  
+
+This README file will guide you on how to set up the project on your local machine.  
+
+## Prerequisites
+
+- **Node.js** (Installation steps are provided in this README)
+- **NPM** (Node Package Manager, installation steps are also included)
+
+Please follow the instructions below.
+
+## How to Install Prerequisites on Linux
+
+### Installing on Ubuntu, Debian, and Linux Mint:
 ```bash
 sudo apt install nodejs npm
 ```
-after this you will have installed node.js and the node package manager
-Installing Node.js & npm on <b>Arch Linux and monjaro: </b>
+
+After this, you will have installed Node.js and NPM.
+
+### Installing on Arch Linux and Manjaro:
 ```bash
-sudo pacman -S nodejs
-```
-Installing Node.js & npm <b>OpenSUSE:</b> 
-```bash
-sudo zypper install nodejs # also installs npm
+sudo pacman -S nodejs npm
 ```
 
-<b><h2>How to install prerequisites on Mac</h2></b>
-open the terminal and run the following code:
+### Installing on OpenSUSE:
+```bash
+sudo zypper install nodejs # Also installs npm
+```
+
+## How to Install Prerequisites on Mac
+
+Open the terminal and run the following command:
 ```bash
 brew install node
 ```
-this should install node.js on your machine.
-now run this code for installing npm(node package manager): 
+
+This should install Node.js on your machine.  
+
+Now, install NPM (Node Package Manager) using:
 ```bash
 brew install npm
 ```
-now you are setup!
 
-<b><h2>How to install prerequisites on Windows</h2></b>
-run the following code to install both Node.js & npm on windows:
+Now you are set up!
+
+## How to Install Prerequisites on Windows
+
+Run the following commands to install both Node.js and NPM on Windows:
 ```bash
 winget install Schniz.fnm
 fnm install 23
-```
-
