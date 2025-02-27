@@ -62,7 +62,6 @@ fnm install 23
 ```
 ## clone the repository into your machine
 
-## clone repository so you can get access to the code.
 ```bash
 git clone https://github.com/bilal-algorithms/githubSearch.git && cd githubSearch
 
