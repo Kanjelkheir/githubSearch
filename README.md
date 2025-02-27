@@ -6,7 +6,7 @@
 </p>
 
 ## video of usage:
-<img src="./githubSearch.gif" width="250px" height="250px" alt="gif" />
+<img src="./githubSearch.gif" width="250px" height="50%" alt="gif" />
 ---
 
 In this web app, you will be able to view any GitHub user, displaying their information in a way that introduces them and provides insights about them.  
