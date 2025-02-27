@@ -59,3 +59,32 @@ Run the following commands to install both Node.js and NPM on Windows:
 ```bash
 winget install Schniz.fnm
 fnm install 23
+
+## clone the repository into your machine
+
+clone repository so you can get access to the code.
+```bash
+git clone https://github.com/bilal-algorithms/githubSearch.git && cd githubSearch
+
+```
+now you are ready to start installing the packages
+
+## install all the packages needed for the project
+
+this following command will install all the packages needed for running this project on your local machine
+
+```bash
+npm install
+```
+**or**
+```bash
+npm i
+```
+## run the project on your local machine
+
+the following command will run the project on your local machine with the default port
+
+```bash
+npm start
+```
+**Enjoy now you have the Github Search project setup!**
