@@ -5,7 +5,7 @@
     <img src="/light-mode.png" width="45%" /> 
 </p>
 
-## video of usage:
+## Video of usage:
 <img src="./githubSearch.gif" width="500px" height="300px" alt="gif" />
 ---
 
@@ -62,17 +62,17 @@ Run the following commands to install both Node.js and NPM on Windows:
 winget install Schniz.fnm
 fnm install 23
 ```
-## clone the repository into your machine
+## Clone the repository into your machine
 
 ```bash
 git clone https://github.com/bilal-algorithms/githubSearch.git && cd githubSearch
 
 ```
-now you are ready to start installing the packages
+Now you are ready to start installing the packages
 
 ## install all the packages needed for the project
 
-this following command will install all the packages needed for running this project on your local machine
+The following command will install all the packages needed for running this project on your local machine
 
 ```bash
 npm install
@@ -81,15 +81,15 @@ npm install
 ```bash
 npm i
 ```
-## run the project on your local machine
+## Run the project on your local machine
 
-the following command will run the project on your local machine with the default port
+The following command will run the project on your local machine with the default port
 
 ```bash
 npm start
 ```
-**note: if there is any downfall in the api we have a backup dataset for all the users!**
-Developer: Bilal Kanjelkheir
+**note: If there is any downfall in the API, we have a backup dataset for all the users!** <br />
+Developer: Bilal Kanjelkheir </br>
 And special thanks for Elie Khalil for creating the backup dataset.
 
 **Enjoy now you have the Github Search project setup!**
