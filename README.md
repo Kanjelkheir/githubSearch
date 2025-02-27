@@ -41,7 +41,7 @@ now you are setup!
 run the following code to install both Node.js & npm on windows:
 ```sh
 # Download and install fnm:
-winget install Schniz.fnm
+bilal@githubSearch:~$winget install Schniz.fnm
 # Download and install Node.js:
-fnm install 23
+bilal@githubSearch:~$fnm install 23
 ```
