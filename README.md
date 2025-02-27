@@ -14,7 +14,7 @@ in this README file you will know how to setup the project on your local machine
 </ul>
 <p>Please follow the following instructions.</p>
 <b><h2>How to install prerequisites on Linux</h2></b>
-Installing on ubuntu, debian, and linux mint: 
+<b>Installing on Ubuntu, Debian, and Linux Mint:</b>
 ```bash
 sudo apt install nodejs npm
 ```
