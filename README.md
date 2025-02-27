@@ -15,15 +15,27 @@ in this README file you will know how to setup the project on your local machine
 <p>Please follow the following instructions.</p>
 <b><h2>How to install prerequisites on Linux</h2></b>
 Installing on ubuntu, debian, and linux mint: 
-`sudo apt install nodejs npm` after this you will have installed node.js and the node package manager
+```
+sudo apt install nodejs npm
+``` 
+after this you will have installed node.js and the node package manager
 Installing Node.js & npm on <b>Arch Linux and monjaro: </b>
-`sudo pacman -S nodejs`
+```
+sudo pacman -S nodejs
+```
 Installing Node.js & npm <b>OpenSUSE:</b> 
-```sudo zypper install nodejs # also installs npm```
+```
+sudo zypper install nodejs # also installs npm
+```
 <b><h2>How to install prerequisites on Mac</h2></b>
-open the terminal and run the following code: ```brew install node```
+open the terminal and run the following code:
+ ```
+ brew install node
+ ```
 this should install node.js on your machine.
-now run this code for installing npm(node package manager): ```brew install npm```
+now run this code for installing npm(node package manager): ```
+brew install npm
+```
 now you are setup!
 
 <b><h2>How to install prerequisites on Windows</h2></b>
