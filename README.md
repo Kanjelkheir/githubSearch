@@ -10,29 +10,31 @@ in this README file you will know how to setup the project on your local machine
 <b><h2>Prerequisites</h2></b>
 <ul>
     <li>Node.js (I will show you on how to install in this README)</li>
-    <li>NPM(node package manager) which will also be shown on how to be installed in this README</li>
+# Download and install fnm:
+winget install Schniz.fnm
+# Download and install Node.js:
+fnm install 23
+Installing on ubuntu, debian, and linux mint: 
 </ul>
 <p>Please follow the following instructions.</p>
 <b><h2>How to install prerequisites on Linux</h2></b>
 Installing on ubuntu, debian, and linux mint: 
 ```
 sudo apt install nodejs npm
-``` 
+sudo pacman -S nodejs
 after this you will have installed node.js and the node package manager
 Installing Node.js & npm on <b>Arch Linux and monjaro: </b>
 ```
-sudo pacman -S nodejs
+sudo zypper install nodejs # also installs npm
 ```
 Installing Node.js & npm <b>OpenSUSE:</b> 
 ```
-sudo zypper install nodejs # also installs npm
-```
-<b><h2>How to install prerequisites on Mac</h2></b>
+brew install node
 open the terminal and run the following code:
  ```
  brew install node
  ```
-this should install node.js on your machine.
+brew install npm
 now run this code for installing npm(node package manager): ```
 brew install npm
 ```
