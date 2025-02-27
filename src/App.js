@@ -66,7 +66,7 @@ const App = () => {
         <div className="relative top-10 mx-4 flex flex-col-reverse">
           <Profile username={username ? username : localStorage.getItem("username")} onDelete={handleDelete} deleted={deleted} input={username} />
         </div>
-        
+      
     </div>
   )
 }
