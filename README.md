@@ -59,10 +59,10 @@ Run the following commands to install both Node.js and NPM on Windows:
 ```bash
 winget install Schniz.fnm
 fnm install 23
-
+```
 ## clone the repository into your machine
 
-clone repository so you can get access to the code.
+## clone repository so you can get access to the code.
 ```bash
 git clone https://github.com/bilal-algorithms/githubSearch.git && cd githubSearch
 
