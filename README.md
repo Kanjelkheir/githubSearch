@@ -10,39 +10,36 @@ in this README file you will know how to setup the project on your local machine
 <b><h2>Prerequisites</h2></b>
 <ul>
     <li>Node.js (I will show you on how to install in this README)</li>
-# Download and install fnm:
-winget install Schniz.fnm
-# Download and install Node.js:
-fnm install 23
-Installing on ubuntu, debian, and linux mint: 
+    <li>NPM(node package manager) which will also be shown on how to be installed in this README</li>
 </ul>
 <p>Please follow the following instructions.</p>
 <b><h2>How to install prerequisites on Linux</h2></b>
 Installing on ubuntu, debian, and linux mint: 
-```
+```sh
 sudo apt install nodejs npm
-sudo pacman -S nodejs
+``` 
 after this you will have installed node.js and the node package manager
 Installing Node.js & npm on <b>Arch Linux and monjaro: </b>
-```
-sudo zypper install nodejs # also installs npm
+```sh
+sudo pacman -S nodejs
 ```
 Installing Node.js & npm <b>OpenSUSE:</b> 
+```sh
+sudo zypper install nodejs # also installs npm
 ```
-brew install node
+<b><h2>How to install prerequisites on Mac</h2></b>
 open the terminal and run the following code:
+ ```sh
+ brew install node
  ```
- bash brew install node
- ```
-brew install npm
+this should install node.js on your machine.
 now run this code for installing npm(node package manager): ```
-brew install npm
-```
+brew install npm```
 now you are setup!
 
 <b><h2>How to install prerequisites on Windows</h2></b>
 run the following code to install both Node.js & npm on windows:
-```
+```sh
 # Download and install fnm:
 winget install Schniz.fnm
 # Download and install Node.js:
