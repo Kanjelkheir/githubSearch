@@ -57,7 +57,6 @@ const Profile = ({username, onDelete, deleted, input}) => {
         )}
         </div>
         
-        
     )
 }
 
