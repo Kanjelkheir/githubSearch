@@ -1,1 +1,2 @@
-<h1 style="text-align: center">Github Search Web app</h1>
+<h1>Github Search Web app</h1>
+<img src="./dark-mode.png"></img>
