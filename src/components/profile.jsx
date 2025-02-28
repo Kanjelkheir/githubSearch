@@ -50,7 +50,7 @@ const Profile = ({username, onDelete, deleted, input}) => {
         {localStorage.getItem("username") === "bilal-algorithms" ? null : (
             <button 
                 onClick={() => {localStorage.setItem("username", input); console.log(username)}} 
-                className="absolute top-52 text-blue-400 mt-2 hover:underline cursor-pointer w-fit"
+                className="absolute top-52 text-blue-400 mt-2 hover:underline cursor-pointer w-fit max-md:mt-7"
             >
                 Save search
             </button>
