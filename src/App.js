@@ -35,13 +35,13 @@ const App = () => {
         <p className="text-black dark:text-white font-bold text-lg">Developer: <a target="_blank" rel="noreferrer" className="border-b-2 dark:border-b-blue-500 border-b-black hover:text- hover:border-b-4 duration-200 hover:border-b-blue-500" href="https://github.com/bilal-algorithms">Bilal Kanjelkheir</a></p>
       </div>
       <div className="flex flex-col mt-28 w-full px-4 md:px-48 h-full flex-wrap">
-        <div className="w-full mx-auto flex items-center justify-center mb-40">
-          <p className="font-bold text-4xl md:text-6xl dark:text-white">
-            Find More About Your <span className="font-bold text-4xl md:text-6xl bg-gradient-to-r from-gradient-start to-gradient-end bg-clip-text text-transparent">Developer</span> on Github...
+        <div className="w-full mx-auto flex items-center justify-center mb-40 max-md:mt-5">
+          <p className="font-bold text-2xl md:text-6xl dark:text-white">
+            Find More About Your <span className="font-bold text-2xl md:text-6xl bg-gradient-to-r from-gradient-start to-gradient-end bg-clip-text text-transparent">Developer</span> on Github...
           </p>
         </div>
       </div>
-      <div className="flex flex-row shadow-md shadow-slate-300 h-12 w-full md:w-[25%] mx-auto rounded-xl">
+      <div className="flex flex-row shadow-md shadow-slate-300 h-12 w-72 sm:w-[25%] mx-auto rounded-xl max-md:mb-9">
         <input 
           type="text"
           placeholder="Search for a Developer..."
