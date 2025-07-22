@@ -11,7 +11,7 @@ const App = () => {
   useEffect(() => {
     setDeleted(false);
     if (localStorage.getItem('username') === "") {
-      setUsername("bilal-algorithms");
+      setUsername("kanjelkheir");
       localStorage.setItem("username", "bilal-algorithms");
     } else {
       setUsername(localStorage.getItem("username"));
